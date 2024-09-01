@@ -11,7 +11,10 @@
       nisi? Quae sint sed cum sapiente suscipit velit aliquam incidunt aut eos.
       Amet ex voluptas maxime non reiciendis libero.
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/currency/UAH");
+</script>
